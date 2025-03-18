@@ -1699,19 +1699,6 @@ class _PatientDetailScreen2State extends State<PatientDetailScreen4>
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 ElevatedButton(
-                  onPressed: _clearVitalsFields,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xffff96a8),
-                    padding: const EdgeInsets.symmetric(
-                        vertical: 14, horizontal: 24),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12)),
-                  ),
-                  child: const Text('Clear',
-                      style: TextStyle(fontWeight: FontWeight.bold)),
-                ),
-                const SizedBox(width: 12),
-                ElevatedButton(
                   onPressed: _addVitals,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xffff96a8),
@@ -1724,6 +1711,20 @@ class _PatientDetailScreen2State extends State<PatientDetailScreen4>
                       style: TextStyle(
                           fontWeight: FontWeight.bold, color: Colors.black)),
                 ),
+                SizedBox(width: 12),
+                ElevatedButton(
+                  onPressed: _clearVitalsFields,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color(0xffff96a8),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 14, horizontal: 24),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12)),
+                  ),
+                  child: const Text('Clear',
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                ),
+                const SizedBox(width: 12),
               ],
             ),
           ],
